@@ -23,3 +23,28 @@ inline-flex will just wrap around the content
 - When we use flex-direction  we get two axises : _main axis and cross axis_
 Below is the depiction for main and cross axis when using `flex-direction:row`
 ![](images/05_00.png)
+
+### flex-wrapping
+- flex-wrap is put on the flex-container(parent) and not flex-item(immediate children)
+- It's default value is `flex-wrap:nowrap`
+- default flex items take the height of the element .and strtches to fit it
+- To divide the screen into equal space for divs to avoid whitespace we  can use `100/3 viz 33.3333%` or just use calc() `width:calc(100% / 3);`
+- if we put `flex-direction:column` and have a 100vh and wrap is set, it  wraps the elements within the screen space
+- If we set height to min-height it will wrap cause min-height is set and height is not fixed
+
+_without min-height and with in-height:_
+![](images/06_00.png)
+
+if we want to add margin then we can do 
+`width:calc(33.3333% - 20px);` 20px cause 10px on either side left & right
+![](images/07_00.png)
+
+### flex-ordering
+- `flex:1;` takes the width and evenly spreads it 
+- We can set it on the `flex-items`,by default all are set to _zero_
+`.box{order:0}` and when we do `.box{order:2}` it sets it at the end of last element with `order:0`
+![](images/08_00.png)
+
+Also works with negative values .box3{order:-1}
+![](images/09_00.png)
+- not to be used to copy texts but only to order certain elements
