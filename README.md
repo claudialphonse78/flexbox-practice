@@ -22,6 +22,7 @@ inline-flex will just wrap around the content
 - The min-height property in CSS is used to set the minimum height of a specified element. The min-height property always overrides both height and max-height
 - When we use flex-direction  we get two axises : _main axis and cross axis_
 Below is the depiction for main and cross axis when using `flex-direction:row`
+
 ![](images/05_00.png)
 
 ### flex-wrapping
@@ -45,6 +46,17 @@ if we want to add margin then we can do
 `.box{order:0}` and when we do `.box{order:2}` it sets it at the end of last element with `order:0`
 ![](images/08_00.png)
 
-Also works with negative values .box3{order:-1}
+Also works with negative values .box3`{order:-1}`
 ![](images/09_00.png)
 - not to be used to copy texts but only to order certain elements
+
+### Flex-alignment content with justify-content
+![](images/10_00.png)
+- `justify content` is used to describe how the items are aligned on the main axis
+
+below is for `flex-direction:column` with _main axis running from top to bottom_
+![](images/11_00.png)
+
+
+
+
