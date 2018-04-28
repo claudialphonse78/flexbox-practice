@@ -57,6 +57,11 @@ Also works with negative values .box3`{order:-1}`
 below is for `flex-direction:column` with _main axis running from top to bottom_
 ![](images/11_00.png)
 
-
-
+### Flex-alignment conent with align items
+  ![](images/12_00.png)
+- for align items we are more concerned about the cross axis which is from top to bottom
+- align items are set to stretch by default
+`align-items:stretch`
+- baseline aligns items according to their text baseline
+![](images/13_00.png)
 
