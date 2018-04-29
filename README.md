@@ -65,3 +65,9 @@ below is for `flex-direction:column` with _main axis running from top to bottom_
 - baseline aligns items according to their text baseline
 ![](images/13_00.png)
 
+### Flex-alignment with align-self
+  ![](images/14_00.png)
+
+- This allows the default alignment to be overridden by invidual flex items
+- **Note** that float, clear and vertical-align have no effect on a flex item.
+  ![](images/15_00.png)
