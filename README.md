@@ -71,3 +71,9 @@ below is for `flex-direction:column` with _main axis running from top to bottom_
 - This allows the default alignment to be overridden by invidual flex items
 - **Note** that float, clear and vertical-align have no effect on a flex item.
   ![](images/15_00.png)
+
+### Flex sizing property
+- the `flex items` have flex as `auto`
+- so when we say `flex:1` it takes up the remaining space and distributes the space evenly for all 
+  ![](images/16_00.png)
+  
