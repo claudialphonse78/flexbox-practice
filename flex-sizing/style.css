@@ -25,11 +25,10 @@
   display: flex;
 }
 .box1{
-  flex-basis:400px ;   
-  flex-grow: 5 ;
-  flex-shrink: 5;
+  /*flex : grow shrink basis;*/
+  flex:10 5 400px;
 }
 .box2{
-  flex-basis: 400px;
-  flex-grow: 1;
+  /*flex : grow shrink basis;*/
+  flex:1 1 400px;
 }
