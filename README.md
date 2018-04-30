@@ -76,4 +76,28 @@ below is for `flex-direction:column` with _main axis running from top to bottom_
 - the `flex items` have flex as `auto`
 - so when we say `flex:1` it takes up the remaining space and distributes the space evenly for all 
   ![](images/16_00.png)
-  
+
+### Flexbox flex-grow,flex-shrink,flex-basis
+**The beauty of flex items is being “flexible.”**
+  ####Flex-grow and Flex-shrink
+Flex-grow and flex-shrink allow us to play around this even more
+- The flex-grow and flex-shrink properties _control how much a flex-item should “grow” (extend) if there are extra spaces_, **or** _“shrink” if there are no extra spaces._
+- **They may take up any values ranging from 0 to any positive number. 0 || positive number**
+- **By default, the flex-grow property is set to 0**. By implication, the flex-item does NOT grow to fit the entire space available.
+- **By default, the shrink property is set to 1.** Which means the flex-shrink switch is also turned on!
+- when we set `flex:1` its a shorthand for `flex-grow:1` and `flex-shrink:1`
+- # **TLDR;** flex grow deals with how to manage extra space while flex shrink deals with how to slim ourselves down when we dont have extra space(i.e. how much of ourselves to give up in proportion to the other one )
+  #### Flex-basis
+- **The flex-basis property specifies the initial size of a flex-item**. _Before the flex-grow or flex-shrink properties adjust it's size to fit the container or not._
+- The default value is `flex-basis: auto`. Flex-basis can take on any values `percentages || ems || rems || pixels etc`
+
+### Flex Shorthand
+- The flex shorthand allows you set the flex-grow, flex-shrink and flex-basis properties all at once.
+
+` li {
+  flex: 0 1 auto;
+}`
+- The code above is equal to setting the three properties: **flex-grow: 0; flex-shrink: 1; flex-basis: auto**
+- ## **Flex-grow first, then flex-shrink, and then flex-basis. The acronym, GSB**
+  ![](images/17_00.jfif)
+  - the shorthand property is the recommended way
