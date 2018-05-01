@@ -101,3 +101,5 @@ Flex-grow and flex-shrink allow us to play around this even more
 - ## **Flex-grow first, then flex-shrink, and then flex-basis. The acronym, GSB**
   ![](images/17_00.jfif)
   - the shorthand property is the recommended way
+ ### Navbar
+![](images/17_00.png)
